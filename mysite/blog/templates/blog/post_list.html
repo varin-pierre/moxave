@@ -1,5 +1,12 @@
+{% load staticfiles % }
 <html>
-    <head>Moxave Blog</head>
+    <head>
+        <title>Moxave Blog</tile>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
     <body>
         <h1>Hello World</h1>
         {% for post in posts %}
