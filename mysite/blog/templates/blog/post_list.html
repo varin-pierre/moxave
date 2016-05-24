@@ -1,20 +1,11 @@
-{% load staticfiles % }
-<html>
-    <head>
-        <title>Moxave Blog</tile>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <h1>Hello World</h1>
-        {% for post in posts %}
-            <div>
-                <p>Date: {{ post.published_date }}</p>
-                <h2>{{ post.title }}</h2>
-                <p>{{ post.text|linebreaks }}</p>
-            </div>
-        {% endfor %}
-    </body>
-</html>
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  {% for post in posts %}
+      <div>
+          <p>Date: {{ post.published_date }}</p>
+          <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+          <p>{{ post.text|linebreaks }}</p>
+      </div>
+  {% endfor %}
+{% endblock content%}

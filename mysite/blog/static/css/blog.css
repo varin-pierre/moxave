@@ -1,6 +1,6 @@
-1 a {
-    font-family: 'Lobster';
-    color: #FCA205;
+h1 {
+    font-family: 'Lobster', courier;
+    color: #666699;
 }
 body {
     padding-left: 15px;
