@@ -3,9 +3,12 @@
 {% block content %}
   {% for post in posts %}
       <div>
-          <p>Date: {{ post.published_date }}</p>
-          <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-          <p>{{ post.text|linebreaks }}</p>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <p>Date : {{ post.published_date }}</p>
+            {% if post.edited_date %}
+                <p>Date dernière édition : {{ post.edited_date }}</p>
+            {% endif %}
+            <p>{{ post.text|linebreaks }}</p>
       </div>
   {% endfor %}
 {% endblock content%}
