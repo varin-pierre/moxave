@@ -2,11 +2,13 @@
 
 {% block content %}
   {% for post in posts %}
-      <div>
+      <div class="list-post">
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p>Date : {{ post.published_date }}</p>
+
             {% if post.edited_date %}
-                <p>Date dernière édition : {{ post.edited_date }}</p>
+                <p class="date">Last edit: {{ post.edited_date|date:"D d M Y" }}</p>
+            {% else %}
+                <p class="date">Create: {{ post.published_date|date:"D d M Y"  }}</p>
             {% endif %}
             <p>{{ post.text|linebreaks }}</p>
       </div>

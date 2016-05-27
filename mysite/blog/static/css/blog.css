@@ -1,5 +1,6 @@
 h1 {
-    font-family: 'Lobster', courier;
+    font-family: 'Krungthep', courier;
+    font-size: 42;
     color: #666699;
 }
 body {
@@ -8,4 +9,20 @@ body {
 .page-header{
     background-color: #ccccff;
     padding: 20px 20px 20px 10px;
+    
+}
+.date{
+    font-size: 12;
+}
+.list-post{
+    border-left-width: 20px    ;
+    border-left: solid #9999cc;
+    padding-left: 10px;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20px;   /* Height of the footer */
+    background: #ccccff;
 }
