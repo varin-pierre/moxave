@@ -25,7 +25,7 @@ SECRET_KEY = 'q)bmam9fxt(cq&6-z(+#pdsj0k$2rpj7sp!!m9d^l4ayxt85o_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 DEFAULT_FROM_EMAIL = 'moxave@gmail.com'
-ALLOWED_HOSTS = [www.moxave.me]
+ALLOWED_HOSTS = ['www.moxave.me']
 
 
 # Application definition
