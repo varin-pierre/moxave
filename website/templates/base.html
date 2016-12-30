@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/default.css')}}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/component.css')}}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+		<link href='http://fonts.googleapis.com/css?family=Corben&subset=latin' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Damion|Roboto:400,900" rel="stylesheet">
+
+
+		<title>{% block title %}{% endblock %}</title>
+
+		{% block css %}{% endblock %}
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="static/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav class="cl-effect-1">
+				<a href="{{ url_for('index') }}">Moxave</a>
+				<a href="{{ url_for('monengagement') }}" data-hover="MonEngagement">MonEngagement.fr</a>
+				<a href="{{ url_for('sepia') }}" data-hover="Sepia">Sepia</a>
+				<a href="{{ url_for('fortytow') }}" data-hover="42">42</a>
+				<a href="{{ url_for('photo') }}" data-hover="Photo">Photo</a>
+			</nav>
+		</header>
+		<div class="container-fluid">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<footer>
+				<div class="hi-icon-wrap hi-icon-effect-3 hi-icon-effect-3b icon-wrap icon-effect-3 icon-effect-3b">
+					<a class="hi-icon hi-icon-mail" href="mailto:pierre@moxave.me?subject=Contact"></a>
+					<a class="hi-icon hi-icon-list" href="{{ url_for('source') }}"></a>
+					<a class="icon icon-twitter" href="https://twitter.com/moxave"></a>
+					<a class="icon icon-linkedin" href="https://fr.linkedin.com/in/pierre-varin-4684747a"></a>
+				</div>
+		</footer>
+	</body>
+</html>

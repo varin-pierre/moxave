@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoons/icomoon.eot?rn7ike');
+  src:  url('../fonts/icomoons/icomoon.eot?rn7ike#iefix') format('embedded-opentype'),
+    url('../fonts/icomoons/icomoon.ttf?rn7ike') format('truetype'),
+    url('../fonts/icomoons/icomoon.woff?rn7ike') format('woff'),
+    url('../fonts/icomoons/icomoon.svg?rn7ike#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wrap {
+	text-align: center;
+	margin: 0 auto;
+	padding: 2em 0 3em;
+}
+
+.icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 15px 30px;
+	width: 45px; /*90px*/
+	height: 45px;/*90px*/
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+
+.icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.icon:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-size: 24px; /*48px*/
+	line-height: 45px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/* Effect 3 */
+.icon-effect-3 .icon {
+	box-shadow: 0 0 0 2px #fff;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.icon-effect-3 .icon:after {
+	top: -2px;
+	left: -2px;
+	padding: 2px;
+	z-index: -1;
+	background: #fff;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.3s;
+	transition: transform 0.2s, opacity 0.3s;
+}
+
+/* Effect 3a */
+.icon-effect-3a .icon {
+	color: #f06060;
+}
+
+.icon-effect-3a .icon:hover {
+	color: #fff;
+}
+
+.icon-effect-3a .icon:hover:after {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	opacity: 0;
+}
+
+/* Effect 3b */
+.icon-effect-3b .icon {
+	color: #fff;
+}
+
+.icon-effect-3b .icon:hover {
+	color: #BCD9DB;
+	text-decoration: none;
+
+}
+
+.icon-effect-3b .icon:after {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	opacity: 0;
+}
+
+.icon-effect-3b .icon:hover:after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-dropbox:before {
+  content: "\eaae";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-tumblr2:before {
+  content: "\eaba";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-stackoverflow:before {
+  content: "\ead0";
+}
+.icon-file-pdf:before {
+  content: "\eadf";
+}
+.icon-libreoffice:before {
+  content: "\eae3";
+}
+.icon-html-five2:before {
+  content: "\eae5";
+}
+.icon-git:before {
+  content: "\eae7";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+
+body {
+  background-color: #BCD9DB;
+	color: black;
+  font-family: Roboto, sans-serif;
+}
+
+/*div {background-color: #BCD9DB;}*/
+
+header {
+  background-color: #4D6F78;
+
+  }
+
+nav a {
+  	position: relative;
+  	display: inline-block;
+  	margin: 15px 25px;
+  	outline: none;
+  	color: #fff;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	letter-spacing: 1px;
+  	font-weight: 400;
+  	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  	font-size: 1.35em;
+  }
+
+nav a:hover,
+nav a:focus {
+  color: #fff;
+  text-decoration: none;
+	outline: none;
+}
+
+footer {
+  background-color: #4D6F78;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  }
+
+footer div a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.portrait {
+  background-color: #617665;
+  border-radius: 100%;
+  width: 100px;
+	margin: 5px;
+	padding: 5px;
+}
+
+body .sepia {
+  /*
+  sepia 80%       f0cca8
+  sepia original  704214
+  mo xa ve        BCD9DB
+  mo xa ve        617665
+  mox ave         4D6F78
+  */
+}
+
+/* Effect 4: bottom border enlarge */
+.cl-effect-4 a {
+	padding: 0 0 10px;
+}
+
+.cl-effect-4 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+	height: 5px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.logo {
+	width: 64px;
+}
+
+.photo {
+	width: 400px;
+	height: 400px;
+	border: solid;
+}
