@@ -10,17 +10,23 @@
 <div class="container-fluid">
 	<img class="portrait"  src="static/images/pierre.png" alt="Dessin de moi" />
 
-		Projet :
-		<ul>
-			<li>
-				<a href="{{ url_for('sepia') }}">Sepia</a>
-			</li>
-			<li>
-				<a href="{{ url_for('monengagement') }}">Monengagement</a>
-			</li>
-			<li>
-				<a href="{{ url_for('fortytow') }}">Mon école</a>
-			</li>
-		</ul>
+		<h1>Projet :</h1>
+		<div>
+			<p>
+Hi, I'm currently student at 42 (dev school Paris, FRANCE), during my study I can work on some personal stuff made with great people.
+I would share with you some experiences.			</p>
+			<ul>
+				<li>
+					<a href="{{ url_for('sepia') }}">Sepia</a>
+				</li>
+				<li>
+					<a href="{{ url_for('monengagement') }}">Monengagement</a>
+				</li>
+				<li>
+					<a href="{{ url_for('fortytow') }}">Mon école</a>
+				</li>
+			</ul>
+		</div>
+
 </div>
 {% endblock %}
